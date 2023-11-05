@@ -3,6 +3,14 @@ package org.example;
 // Author: Abass Chahin
 
 // Main class to create combinations of the builders and the top, bottoms, and shoes
+//I used the Abstract Factory Design for this assignment as it requires many different combinations
+// while also allowing for new combinations in the future without having to completely re-do the whole code.
+// Abstract Factory Design uses a lot of interfaces which I did the same for this assignment for Top, Bottom, and
+// Shoes, and also for different family types and builders. This way we are using the pros of Abstract Factory Design
+// of not hard coupling between concrete product and the code but instead allowing for flexibility in combinations of garments.
+// I did initially want to use Builder Design Pattern but it was not realistic since it didn't allow for many different combinations.
+
+
 public class DriverClass {
     public static void main(String[] args) {
         GarmentBuilder casualBuilder = new CasualGarmentBuilder();
